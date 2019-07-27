@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Badruzeus</string>
 	<key>Description</key>
-	<string>Clover dark theme with simple logo animation (was BeautyDark2.0). Version: 1.7</string>
+	<string>A dark Clover theme with simple logo animation. Version: 1.8</string>
 	<key>Theme</key>
 	<dict>
 		<key>Anime</key>
@@ -52,15 +52,15 @@
 			<key>Functions</key>
 			<true/>
 			<key>Help</key>
-			<false/>
+			<true/>
 			<key>Label</key>
 			<true/>
 			<key>MenuTitle</key>
-			<false/>
+			<true/>
 			<key>MenuTitleImage</key>
-			<false/>
+			<true/>
 			<key>Revision</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Font</key>
 		<dict>
@@ -81,6 +81,8 @@
 			<integer>180</integer>
 			<key>SelectionSmallWidth</key>
 			<integer>72</integer>
+			<key>TileXSpace</key>
+			<integer>0</integer>
 			<key>TileYSpace</key>
 			<integer>32</integer>
 			<key>Vertical</key>
@@ -108,7 +110,7 @@
 		</dict>
 	</dict>
 	<key>Version</key>
-	<string>1.7</string>
+	<string>1.8</string>
 	<key>Year</key>
 	<string>2019</string>
 </dict>

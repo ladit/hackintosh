@@ -127,7 +127,7 @@
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>DarkBoot</string>
+		<string>ursa-major-clover</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
