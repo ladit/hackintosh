@@ -26,20 +26,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Rename GFX0 to IGPU (Graphics)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					SUdQVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change SAT0 to SATA</string>
 					<key>Disabled</key>
 					<false/>
@@ -54,7 +40,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Fix Asus Z390 BIOS RTC Bug Fix</string>
+					<string>Fix Asus Z390 BIOS RTC bug</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -83,8 +69,6 @@
 		<string>LastBootedVolume</string>
 		<key>NoEarlyProgress</key>
 		<true/>
-		<key>Timeout</key>
-		<integer>3</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -97,6 +81,8 @@
 		</dict>
 		<key>USB</key>
 		<dict>
+			<key>HighCurrent</key>
+			<true/>
 			<key>Inject</key>
 			<false/>
 		</dict>
@@ -110,10 +96,12 @@
 		</array>
 		<key>Mouse</key>
 		<dict>
+			<key>DoubleClick</key>
+			<integer>500</integer>
 			<key>Enabled</key>
 			<true/>
 			<key>Speed</key>
-			<integer>8</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Scan</key>
 		<dict>
@@ -127,7 +115,7 @@
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>ursa-major-clover</string>
+		<string>Minimalism</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -159,12 +147,12 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB Port Limit Patch 1</string>
+				<string>USB PLRP patch #1 10.14.x modify by DalianSky(credit ydeng)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				g/sPD4cLBAAA
+				g/sPDw==
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
@@ -172,17 +160,35 @@
 				<string>com.apple.iokit.IOUSBHostFamily</string>
 				<key>Replace</key>
 				<data>
-				g/s/D4cLBAAA
+				g/s/Dw==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB Port Limit Patch 2</string>
+				<string>USB PLRP patch #2 10.14.x modify by DalianSky(credit ydeng)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				QYP/Dw+DlAQAAA==
+				g+MP0w==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<key>Replace</key>
+				<data>
+				g+M/0w==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB PLRP patch #3 10.14.x modify by DalianSky(credit ydeng)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/sPDw==
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
@@ -190,25 +196,25 @@
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
-				QYP/Pw+DlAQAAA==
+				g/s/Dw==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>USB Port Limit Patch 3</string>
+				<string>USB PLRP patch #4 10.14.x modify by DalianSky(credit ydeng)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				g+MP0+NBCd8=
+				g/8PDw==
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
-				g+M/0+NBCd8=
+				g/8/Dw==
 				</data>
 			</dict>
 		</array>
@@ -225,13 +231,13 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>12/19/2018</string>
+		<string>06/16/2019</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM183.88Z.F000.B00.1812191143</string>
+		<string>IM191.88Z.F000.B00.1906161737</string>
 		<key>Board-ID</key>
-		<string>Mac-BE088AF8C5EB4FA2</string>
+		<string>Mac-AA95B1DDAB278B95</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
@@ -247,13 +253,13 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>167.0.0.0.0</string>
+		<string>220.270.93.0.0</string>
 		<key>Family</key>
 		<string>iMac</string>
 		<key>FirmwareFeatures</key>
-		<string>0xFC0FE137</string>
+		<string>0xFD8FF576</string>
 		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
+		<string>0xFFDFFF7F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
@@ -261,9 +267,9 @@
 		<key>Mobile</key>
 		<false/>
 		<key>PlatformFeature</key>
-		<string>0x00</string>
+		<string>0x22</string>
 		<key>ProductName</key>
-		<string>iMac18,3</string>
+		<string>iMac19,1</string>
 		<key>SerialNumber</key>
 		<string>&lt;Generate New&gt;</string>
 		<key>SmUUID</key>
@@ -273,6 +279,8 @@
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>CustomUUID</key>
+		<string>&lt;SmUUID Here&gt;</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
